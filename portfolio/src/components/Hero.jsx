@@ -1,6 +1,7 @@
 import React from 'react'
 import profile from '../assets/profile.jpeg'
 import {motion} from 'framer-motion'
+import resume from '../assets/anees_mern_stack_resume.pdf'
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-10 md:gap-20 px-6">
@@ -20,7 +21,7 @@ const Hero = () => {
           I build clean, responsive, and user-friendly web interfaces using
           modern JavaScript and React.
         </p>
-        <button className='px-6 py-2 bg-black text-lg font-semibold rounded-lg text-white mt-6 cursor-pointer shadow-lg hover:shadow-xl shadow-gray-400'>Get my resume</button>
+        <a className='px-6 py-2 bg-black text-lg text-center font-semibold rounded-lg text-white mt-6 cursor-pointer shadow-lg hover:shadow-xl shadow-gray-400' href={resume} target="_blank" rel="noopener noreferrer">Get my resume</a>
 
 
       </motion.div>
