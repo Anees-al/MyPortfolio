@@ -1,6 +1,10 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 const Projects = () => {
+
+
+  const navigate=useNavigate();
 
 
     const projects =[
@@ -24,7 +28,11 @@ const Projects = () => {
          ))}
         </div>
 
-        <p className='text-lg font-bold text-gray-800 text-center mt-10'>Visit my github for more projects</p>
+       <div className='flex flex-col items-center mt-5 bg-gray-100 rounded-lg py-6 gap-4'>
+        <h1 className='text-lg sm:text-2xl font-black text-black'>Explore   <span className='text-purple-600'>My more Projects</span> </h1>
+        <p className=' sm:text-lg w-[200px] sm:w-[700px] text-gray-500 font-semibold'>Check out my collection of web projects where I experiment with clean designs and functional code. From interactive UI components to handy web tools, see how I bring ideas to life using modern web technologies.</p>
+         <button className='text-lg font-bold text-white text-center  bg-black px-4 py-2 w-[200px] rounded-lg shadow-gray-500 shadow-lg hover:shadow-xl cursor-pointer' onClick={()=>navigate('/MyPortfolio/projects')} >More projects</button>
+       </div>
       
     </div>
   )
