@@ -19,7 +19,7 @@ const Projects = () => {
 
         <div className='flex flex-col p-10'>
           <h1 className='text-3xl font-bold text-black'>Fun <span className='text-purple-500'>Projects</span> </h1>
-          <div className='grid grid-cols-3 sm:grid-cols-3 gap-2 sm:gap-10'>
+          <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-10'>
 
             {projects.map((project,index)=>(
                 <div className='flex flex-col  bg-white p-3 w-[350px ] h  mt-6 sm:w-[400px] gap-4 p-2'>
