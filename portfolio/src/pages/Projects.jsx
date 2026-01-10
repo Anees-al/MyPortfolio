@@ -3,13 +3,15 @@ import Nav from '../components/Nav'
 import movietitle from '../assets/movietitle1.png'
 import tourism from '../assets/munnar.jpg'
 import Footer from '../components/Footer'
+import homeservice from '../assets/homemaintance.jpg'
 
 const Projects = () => {
 
 
     const projects=[
         {name:'Movie generator',description:'Find your next favorite film in one click. This app solves the "what should I watch?" problem by instantly picking a masterpiece from a strictly curated list of the 100 best movies of all time. No more endless scrolling—just one button, one top-tier recommendation, and zero wasted time.',imageUrl:movietitle,link:'https://anees-al.github.io/MovieGenerator/'},
-        {name:'Keral Tourism Wesite',description:'A comprehensive web platform designed to provide a seamless travel-planning experience for tourists visiting Kerala. The project focuses on a "Mobile-First" design philosophy, ensuring that travelers can access crucial information on the go. It features curated sections for the state s famous backwaters, hill stations, and Ayurvedic wellness centers.',imageUrl:tourism,link:'https://anees-al.github.io/Tourism/'}
+        {name:'Keral Tourism Wesite',description:'A comprehensive web platform designed to provide a seamless travel-planning experience for tourists visiting Kerala. The project focuses on a "Mobile-First" design philosophy, ensuring that travelers can access crucial information on the go. It features curated sections for the state s famous backwaters, hill stations, and Ayurvedic wellness centers.',imageUrl:tourism,link:'https://anees-al.github.io/Tourism/'},
+        {name:'House service Website',description:'A comprehensive service marketplace designed to bridge the gap between homeowners and certified service professionals (plumbing, electrical, cleaning). The platform focuses on high-conversion UI and a frictionless booking experience.',imageUrl:homeservice,link:'https://anees-al.github.io/homeService-website/'}
     ]
   return (
     <div className='flex flex-col min-h-screen'>
@@ -17,7 +19,7 @@ const Projects = () => {
 
         <div className='flex flex-col p-10'>
           <h1 className='text-3xl font-bold text-black'>Fun <span className='text-purple-500'>Projects</span> </h1>
-          <div className='flex flex-col sm:flex-row gap-2 sm:gap-10'>
+          <div className='grid grid-cols-3 sm:grid-cols-3 gap-2 sm:gap-10'>
 
             {projects.map((project,index)=>(
                 <div className='flex flex-col  bg-white p-3 w-[350px ] h  mt-6 sm:w-[400px] gap-4 p-2'>
