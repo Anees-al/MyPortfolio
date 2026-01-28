@@ -1,7 +1,7 @@
 import React from 'react'
 import profile from '../assets/profile.jpeg'
 import {motion} from 'framer-motion'
-import resume from '../assets/anees_mern_stack_resume.pdf'
+import resume from '../assets/Anees Resume.pdf'
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-10 md:gap-20 px-6">
