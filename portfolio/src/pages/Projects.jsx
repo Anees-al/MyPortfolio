@@ -25,7 +25,7 @@ const Projects = () => {
 
             {projects.map((project,index)=>(
                 <div className='flex flex-col  bg-white p-3 w-[350px ] h  mt-6 sm:w-[400px] gap-4 p-2'>
-                     <img src={project.imageUrl} alt="" />
+                     <img src={project.imageUrl} alt=""  className='w-full h-[300px]'/>
                     <p className='text-lg text-center font-bold'>{project.name}</p>
                   
                     <p className='text-sm font-semibold text-gray-500 '>{project.description}</p>
